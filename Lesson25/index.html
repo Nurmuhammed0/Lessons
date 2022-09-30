@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li class="clas">r</li>
+    <li id="ll">t</li>
+    <li class="clas">u</li>
+    <li id="ll">k</li>
+  </ul>
+
+  <script>
+                                        // dom selectors
+    // 1) getElementsByTagName
+    // let li3 = document.getElementsByTagName('li')
+    // console.log(li3);
+
+    // 2) getElementsByClassName
+    // let clas = document.getElementsByClassName('clas')
+    // console.log(clas);
+
+    // 3) document.getElementById
+    // let gg = document.getElementById('ll')
+    // console.log(gg);
+
+    // 4) querySelector || querySelectorAll
+    //  let item = document.querySelector('li')
+    let item = document.querySelectorAll('li')
+    item.forEach((item)=>{
+      console.log(item);
+    })
+
+
+  </script>
+</body>
+</html>

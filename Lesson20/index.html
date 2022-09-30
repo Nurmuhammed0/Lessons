@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // forEach
+
+    const name = ['rasul','marat','almaz','syimyk'];
+    // let names = []
+
+    // for(let i = 0; i<name.length;i++ ){
+    //   console.log(name[i]);
+    // }
+
+
+
+    name.forEach((dd,i) => {
+      let newName = dd.charAt().toUpperCase() + dd.slice(1).toLowerCase() + 'bek'
+      // names.push(newName)
+      console.log(newName,i);
+    });
+    // console.log(names);
+  </script>
+</body>
+</html>

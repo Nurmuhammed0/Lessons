@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="/task6/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <button class="btn showBtn" id="iid">Submit</button>
+
+    <div class="modal hidden" id="modal">
+      <div class="modalHeder">
+        <h3>I love KYRGYZSTAN❤💖</h3>
+        <button class="btn closeBtn" id="closeBtn">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+
+      <div class="modalBody">
+        <h2 class="modalTitle">Modal Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ullam voluptatum cumque voluptas, velit doloremque quas repudiandae dolorem officia, voluptatem laborum doloribus quam temporibus provident non quaerat voluptates rerum labore vel dolores omnis ex aperiam. Aliquid quae sit cupiditate, natus nostrum molestiae eius sapiente.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="overlay">
+
+  </div>
+
+  <script src="/task6/script.js"></script>
+</body>
+</html>

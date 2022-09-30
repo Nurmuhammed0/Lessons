@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // && and ||
+
+    let parol = 'password@123'
+    if(parol.length >= 12 && parol.includes('@')){
+      console.log('false');
+    }else if (parol.length >= 8 || (parol.includes('@') && parol.length >= 5)){
+      console.log('true');
+    }else {
+      console.log('false $$ false');
+    }
+
+
+    // !!!!
+
+    let user = false
+
+    if(!user){
+      console.log("true");
+    }
+  </script>
+</body>
+</html>

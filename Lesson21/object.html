@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // object = properties & methods
+
+    /*properties            methods
+    .email                  .login
+    .username               .logout
+    .gender
+    .age
+    .data of birthday
+    */
+ 
+    const user = {
+      name: 'Nurmukhammed',
+      age: 22,
+      email: 'Nur26kudayarov@gmail.com',
+      location: 'Osh',
+      lang: 'Kyrgyz'
+    }
+     console.log(user);
+     console.log(user.name);
+
+     user.age = 21;
+     console.log(user.age);
+
+     console.log(user['lang']);
+     user['lang'] = 'orus'
+     console.log(user['lang']);
+
+     console.log(typeof user);
+
+
+
+
+    //  const user = {
+    //   name: 'Nurmukhammed',
+    //   age: 22,
+    //   email: 'Nur26kudayarov@gmail.com',
+    //   location: 'Osh',
+    //   lang: ['Kyrgyz','Orus'],
+    //   login: ()=>{
+    //     console.log('Salam');
+    //   },
+    //   logout: function(){
+    //     console.log('Kandaisyz');
+    //   }
+    // }
+    // user.login()
+    // user.logout()
+
+
+    // const name = 'Rasul'
+    // name.toUpperCase()
+  </script>
+</body>
+</html>

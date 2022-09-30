@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const calcArea = function(radius){
+      return 3.14 * radius ** 2
+    }
+    const area = calcArea(5)
+    console.log(area);
+
+
+    // Arrow function
+    const great = (f,g)=>{
+      return`Hello ${f} ${g}`
+    }
+    let result =  great('Rasul','Marat')
+    console.log(result);
+
+
+
+    const bazar = function(products, salyk){
+      let jyiyntyk = 0
+
+      for(let i = 0; i<products.length; i++){
+        jyiyntyk += products[i] + products[i] * salyk
+      }
+
+      return jyiyntyk
+    }
+
+    const dd = bazar([10, 13, 45], 0.2)
+    console.log(dd);
+
+
+
+    let hh = (products, salyk)=>{
+      let ff = 0
+
+      for(let i = 0; i<products.length; i++){
+        ff += products[i] + products[i]*salyk
+      }
+      return ff
+    }
+
+    let gg = hh([10,21,33],0.2)
+    console.log(gg);
+
+
+
+    let kk =(product, paiyz)=>{
+      let ll = 0
+
+      for(let k = 0; k<product.length; k++){
+        ll += (product[k] * paiyz) / 100;
+      }
+      return ll
+    }
+
+    let cc = kk([20,22,24], 20)
+    console.log(cc);
+  </script>
+</body>
+</html>

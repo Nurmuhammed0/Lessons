@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">Artur</h1>
+  <h1 id="title">Ali</h1>
+  <h1 id="title">Aman</h1>
+  <ul></ul>
+
+  <script>
+    // textContent && innerHTML
+
+    let title = document.querySelectorAll('#title')
+    title.forEach((item)=>{
+      item.textContent += ' dos'
+    })
+    
+    let ff = document.getElementById('title')
+    ff.innerHTML = '<h1>Nur</h1>'
+    
+    let name = ['Rasul','Marat','Kutman']
+    let hh = document.querySelector('ul')
+    name.forEach((m)=>{
+      hh.innerHTML += `<li>${m}</li>`
+    })
+  </script>
+</body>
+</html>

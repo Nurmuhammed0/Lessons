@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // JavaScript Masele ishtoo
+
+    // Loop / Array / String / Function / Object
+
+    // № 1
+    // Array ichindegi Stringtin indexin tap
+
+    // const myArray =[[false,true],[1,2],99, 'Salam']
+
+    // for(let i = 0; i < myArray.length; i++){
+    //   if(typeof myArray[i] == 'string'){
+    //     console.log('string index',i);
+    //   }
+    // }
+
+    // myArray.forEach((item,i)=>{
+    //   if(typeof item == 'string')
+    //   console.log("String index:",i);
+    // })
+
+
+    // № 2
+    // Массиф ичиндеги жалан Массифтерди браузерге чыгар
+
+    // const data = [[1,2,3],'red', [4,5,6],true,false]
+    // let newData = []
+
+    // data.forEach((name)=>{
+    //   let mm = Array.isArray(name)
+    //   if(mm){
+    //     name.forEach((number)=>[
+    //       newData.push(number)
+    //     ])
+    //   }
+    // })
+    // console.log(newData);
+
+
+    // № 3
+    // Масиф ичиндеги 
+    // [null,0,'',false,undefined,NaN]
+    // ушул нерселерди ажыратып ала турган код жаз
+
+    // const data = [null,99,false,'0',0,undefined,'',NaN,'false']
+    // let ll =[]
+
+    // data.forEach((item)=>{
+    //   if(!item){
+    //     ll.push(item)
+    //   }
+    // })
+    // console.log(ll);
+
+
+
+    // № 4
+    // Берилген нерсени тескерисине чыгарсын мисалы "Бишкек","кекшиБ"
+
+    // 1
+    // const citi = 'Bishkek'
+    // const citi2 = citi.split('').reverse()
+    // let n = ''
+    // for(let i = 0;i < citi2.length;i++){
+    //   n += citi2[i]
+    // }
+    //   console.log(n);
+
+    // 2
+    // const citi = 'Bishkek'
+    // const citi2 = citi.split('')
+    // let n = '';
+
+    // for(i = citi.length - 1; i>=0;i--){
+    //   n += citi2[i]
+    // }
+    // console.log(n);
+
+
+
+    // № 5
+    // prompt()дон киргизилген создорду тууралап жаз биринчиси кичине тамга менен калганы Баш тамга менен  
+
+    // let text = prompt('text')
+    // let splitword = text.split(' ')
+    // let newtext = ''
+
+    // splitword.forEach((name)=>{
+    //   let bashy = name.charAt().toLowerCase()
+    //   let ayagy = name.slice(1).toUpperCase()
+    //   newtext += ' '+bashy + ayagy
+    // })
+    // console.log(newtext.trimStart());
+
+
+
+    // № 6
+    // Массиф ичиндеги натуралдык сандардын суммасын чыгар
+
+    // let numbers = [-1,67,33,3.1,-5,-5.5,Infinity,0,1,2,0.9]
+    // let natural = 0
+
+    // numbers.forEach((num)=>{
+    //   if(num > 0.0 && (Math.floor(num) === num) && num != Infinity){
+    //     natural+=num
+
+    //   }
+    // })
+    // console.log(natural);
+
+
+
+    // № 7
+    // prompt()дон киргизилген создордо А тамгасы канча жолу колдонулганын аныкта
+      
+    // let text = prompt('Text')
+    // let tamga = prompt('Tamga')
+    // let textsplit = text.split('')
+    // let a = 0
+    // let f = []
+
+    // textsplit.forEach((soz,i)=>{
+    //   if(soz == tamga || soz == tamga.toUpperCase()){
+    //     f += ' '+soz
+    //     a++
+    //   }else{
+    //     console.log('Myndai tamga jok');
+    //   }
+    // })
+    // console.log(a,f);
+
+
+
+    // № 8
+    // Массиф ичиндеги элементтердин тибин аныкта
+    // [21,'Ali',23,'array',['hello'],null,true,214]
+      // ['Number','String','Number','String','String',object,boolean,'Number']
+
+    // const types = [21,'Ali',23,'array',['hello'],null,true,214]
+
+    // let ll = []
+    // types.forEach((type)=>{
+    //   ll.push(typeof type)
+      
+    // })
+    // console.log(ll);
+
+
+
+    // № 9
+    // promptтон келген создун канча елементи бар экенин аныкта length колдонбостон
+
+    // let word = 'Kyrgyzstan'
+    // let f = word.lastIndexOf(word.slice(-1))+1
+    // console.log(f);
+    
+    
+
+    // № 10
+    // Массиф [1,2,3,4,5] ичиндеги сандарга озунун индексин кошуп чыгар
+    // Joob: [1,3,5,8,9]
+    
+    // let number = [1,2,3,4,5];
+    // let result = [];
+
+    // number.forEach((num,i)=>{
+    //   result.push(num + i)
+    // })
+    // console.log(result);
+
+
+
+    // promptтон берилген санга чейинки сандардын суммасын тап
+    // 1+2+3=6
+    
+    let prom = +prompt('number')
+    let num = 0;
+    for(i = 1; i <= prom; i++){
+      num += i
+    }
+    console.log(num);
+
+  </script>
+</body>
+</html>

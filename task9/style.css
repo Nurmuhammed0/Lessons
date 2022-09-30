@@ -1,0 +1,8 @@
+.success{
+  border: 2px solid rgb(42, 232, 17);
+  box-shadow: 0px 0px 20px rgb(10, 230, 10);
+}
+.error{
+  border: 2px solid red;
+  box-shadow: 0px 0px 20px red;
+}

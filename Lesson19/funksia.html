@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function name(birthYear, firstName){
+      let age = 2022 - birthYear
+      // let age = `${firstName} siz ${2022 - birthYear} jashtasyz`
+      console.log(`${firstName} siz ${age} jashtasyz`);
+      return age;
+    }
+    let asan = name(2000, 'Nurmuhammed')
+  
+
+
+
+    // callback function
+
+    const myFunc = (callbackFunc) => {
+      let number = 50
+      callbackFunc(number)
+    }
+
+    myFunc((value) =>{
+      console.log(value);
+    })
+  </script>
+</body>
+</html>

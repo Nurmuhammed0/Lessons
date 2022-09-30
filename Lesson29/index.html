@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .error{
+    color: red;
+  }
+  .success{
+    color: blue;
+  }
+  .null{
+    color: green;
+  }
+  .name{
+    background-color: black;
+
+  }
+</style>
+<body>
+  <h1>add & remov class</h1>
+
+  <!-- <p class="error">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere libero, debitis dicta blanditiis minima eius! Blanditiis deleniti alias accusantium sunt ipsa? Molestias sequi sit error nemo minus nisi, maiores repudiandae!
+  </p> -->
+
+  <h2>Ali</h2>
+
+  <p>Lorem ipsum error dolor</p>
+  <p>Lorem ipsum dolor</p>
+  <p>Lorem ipsum success dolor</p>
+  <p>Lorem ipsum dolor</p>
+  <p>Lorem ipsum error dolor</p>
+  <script>
+    // let p = document.querySelector('p')
+    // console.log(p.classList);
+    // p.classList.add('dos')
+    // p.classList.remove('error');
+
+    let name = document.querySelector('h2')
+    name.classList.add('error');
+    name.classList.toggle('name')
+
+    let massif = document.querySelectorAll('p')
+
+    massif.forEach((item)=>{
+     if(item.textContent.includes('error')){
+      item.classList.add('error')
+      console.log(item);
+     }else if(item.textContent.includes('success')){
+      item.classList.add('success')
+      console.log(item);
+     }else{
+      item.classList.add('null')
+     }
+     
+    })
+    
+    let hh = document.querySelector('h1')
+    hh.classList.toggle('success')
+    
+  </script>
+</body>
+</html>
